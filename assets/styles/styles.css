@@ -1,0 +1,25 @@
+@import "components/header.css";
+@import "components/KanbanBoard.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --main: #1dd1a1;
+    --second: #e5e8eb;
+    --third: #ffffff;
+}
+
+body {
+    margin: 0;
+    
+  }
+
+ html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
