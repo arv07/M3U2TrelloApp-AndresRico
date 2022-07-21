@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone - FIMLM</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/static/favicon.png">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="assets/static/icon-header.png" alt="">
+        <p class="title-header">Trello Clone</p>
+    </header>
+
+    <div id="modal" class="modal-container">
+        <div class="modal-window">
+            <p class="modal-window__title board-card__item-title--f-medium">Add new task</p>
+            <button id="close-btn"  class="modal-window__close-btn">X</button>
+            <form action="">
+                <input placeholder="Title task" type="text">
+                <select name="" id="" ></select>
+                <textarea rows="10" cols="50" placeholder="Description"></textarea>
+                <input type="date" name="" id="">
+                <input id="save-btn" type="submit" value="Save">
+                
+            </form>
+
+        </div>
+    </div>
+
+    <div class="board-container">
+        <div class="board">
+            <div class="board-card board__todo-card ">
+                <p class="board-card__title">TO DO</p>
+                <button id="add-task-btn" class="board-card__add-btn">+</button>
+
+                <div class="board-card-container-tiem">
+                    <div class="board-card-item">
+                        <div class="board-card-item__stripe board-card-item__stripe--yellow"></div>
+                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
+                    </div>
+                    <div class="board-card-item">
+                        <div class="board-card-item__stripe board-card-item__stripe--yellow"></div>
+                        <p class="board-card__item-title board-card__item-title--f-medium">Crear API</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Andres Rico</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 21-08-2022</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-card board__todo-card ">
+                <p class="board-card__title">DOING</p>
+                
+
+                <div class="board-card-container-tiem">
+                    <div class="board-card-item">
+                        <div class="board-card-item__stripe board-card-item__stripe--blue"></div>
+                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="board-card board__todo-card ">
+                <p class="board-card__title">FINISHED</p>
+                
+
+                <div class="board-card-container-tiem">
+                    <div class="board-card-item">
+                        <div class="board-card-item__stripe board-card-item__stripe--green"></div>
+                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
+                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+</body>
+<script src="js/Add.js"></script>
+</html>

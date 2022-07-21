@@ -41,6 +41,7 @@ form input, select, textarea {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 20px;
+    
 }
 .modal-window__close-btn{
     position: absolute;
@@ -57,5 +58,6 @@ form input, select, textarea {
     height: 40px;
     font-size: var(--f-medium-2);
 }
+
 
 

@@ -20,10 +20,15 @@
             <p class="modal-window__title board-card__item-title--f-medium">Add new task</p>
             <button id="close-btn"  class="modal-window__close-btn">X</button>
             <form action="">
-                <input placeholder="Title task" type="text">
-                <select name="" id="" ></select>
-                <textarea rows="10" cols="50" placeholder="Description"></textarea>
-                <input type="date" name="" id="">
+                <input id="task-title" placeholder="Title task" type="text">
+                <select name="select-team" id="select-team" >
+                    <option value="Lina Bonilla" selected>Lina Bonilla</option>
+                    <option value="Santiago Lopez">Santiago Lopez</option>
+                    <option value="Marta Sanchez">Marta Sanchez</option>
+                    <option value="Juan Martin">Juan Martin</option>
+                </select>
+                <textarea id="task-description" rows="10" cols="50" placeholder="Description"></textarea>
+                <input id="date" type="date" name="" id="">
                 <input id="save-btn" type="submit" value="Save">
                 
             </form>
@@ -37,20 +42,7 @@
                 <p class="board-card__title">TO DO</p>
                 <button id="add-task-btn" class="board-card__add-btn">+</button>
 
-                <div class="board-card-container-tiem">
-                    <div class="board-card-item">
-                        <div class="board-card-item__stripe board-card-item__stripe--yellow"></div>
-                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
-                    </div>
-                    <div class="board-card-item">
-                        <div class="board-card-item__stripe board-card-item__stripe--yellow"></div>
-                        <p class="board-card__item-title board-card__item-title--f-medium">Crear API</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Andres Rico</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 21-08-2022</p>
-                    </div>
-                </div>
+                
 
             </div>
 
@@ -58,15 +50,7 @@
                 <p class="board-card__title">DOING</p>
                 
 
-                <div class="board-card-container-tiem">
-                    <div class="board-card-item">
-                        <div class="board-card-item__stripe board-card-item__stripe--blue"></div>
-                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
-                    </div>
-                    
-                </div>
+                
 
             </div>
 
@@ -74,15 +58,7 @@
                 <p class="board-card__title">FINISHED</p>
                 
 
-                <div class="board-card-container-tiem">
-                    <div class="board-card-item">
-                        <div class="board-card-item__stripe board-card-item__stripe--green"></div>
-                        <p class="board-card__item-title board-card__item-title--f-medium">Crear header</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span> Jorge Lopez</p>
-                        <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span> 07-08-2022</p>
-                    </div>
-                    
-                </div>
+                
 
             </div>
 
@@ -91,5 +67,7 @@
     </div>
 
 </body>
-<script src="js/Add.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/model/addTask.js" type="module"></script>
+<script src="js/model/listTask.js" type="module"></script>
 </html>
