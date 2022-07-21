@@ -1,13 +1,17 @@
 import { createTask } from "../utils/api.js";
+import { getData } from "./listTask.js";
 
 const addBtn = document.querySelector("#add-task-btn");
 const closeBtn = document.querySelector("#close-btn");
 const saveBtn = document.querySelector("#save-btn");
 
+
 const inputTaskTitle = document.querySelector("#task-title");
 const inputDescription = document.querySelector("#task-description");
 const inputDate = document.querySelector("#date");
 const selectTeam = document.querySelector("#select-team");
+
+
 
 let data = {
     title:"",
@@ -58,11 +62,23 @@ const sendData = async (data) => {
     {
         alert("Task was created");
         document.querySelector("#modal").style.display = "none";
+        removeCards();
+        getData();
     }
     else
     {
         console.log(result);
         alert("It had a problem saving the task");
+        
+    }
+    
+}
+
+const removeCards = () => {
+    
+    for (let x = 0; x < 30; x++) {
+        const boardCardItem = document.querySelector("#board-card-item");
+        boardCardItem ? boardCardItem.parentNode.removeChild(boardCardItem) : x = 500
         
     }
     
