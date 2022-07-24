@@ -20,15 +20,15 @@
             <p class="modal-window__title board-card__item-title--f-medium">Add new task</p>
             <button id="close-btn"  class="modal-window__close-btn">X</button>
             <form action="">
-                <input id="task-title" placeholder="Title task" type="text">
+                <input id="task-title" placeholder="Title task" type="text" required>
                 <select name="select-team" id="select-team" >
                     <option value="Lina Bonilla" selected>Lina Bonilla</option>
                     <option value="Santiago Lopez">Santiago Lopez</option>
                     <option value="Marta Sanchez">Marta Sanchez</option>
                     <option value="Juan Martin">Juan Martin</option>
                 </select>
-                <textarea id="task-description" rows="10" cols="50" placeholder="Description"></textarea>
-                <input id="date" type="date" name="" id="">
+                <textarea id="task-description" rows="10" cols="50" placeholder="Description" required></textarea>
+                <input id="date" type="date" name="" id="" required>
                 <input id="save-btn" type="submit" value="Save">
                 
             </form>
@@ -83,6 +83,7 @@
     </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <!-- Entire bundle -->
 <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
 <!-- legacy bundle for older browsers (IE11) -->
@@ -99,6 +100,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/plugins.js"></script>
 <script src="js/utils/hammer.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/model/date.js" type="module"></script>
 <script src="js/model/addTask.js" type="module"></script>
 <script src="js/model/listTask.js" type="module"></script>
 <script src="js/model/changeState.js" type="module"></script>

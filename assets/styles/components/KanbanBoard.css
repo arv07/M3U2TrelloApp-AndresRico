@@ -62,9 +62,9 @@
     justify-content: first baseline;
     align-items: flex-start;
     width: 90%;
-    height: 170px;
+    height: 210px;
     max-width: 350px;
-    min-height: 170px;
+    /*min-height: 190px;*/
     margin-top: 10px;
     /*padding-left: 30px;*/
     border: solid 1px var(--black-light-main);

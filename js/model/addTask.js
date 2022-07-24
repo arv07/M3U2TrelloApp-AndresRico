@@ -1,5 +1,6 @@
 import { createTask } from "../utils/api.js";
 import { getData } from "./listTask.js";
+import { validateDate } from "./date.js";
 
 const addBtn = document.querySelector("#add-task-btn");
 const closeBtn = document.querySelector("#close-btn");
@@ -44,7 +45,18 @@ saveBtn.addEventListener('click', (event) => {
         assigned: selectTeam.value
     }
 
-    sendData(data);
+    //Date is after
+    if(validateDate(data.date)){
+
+        alert("La fecha elegida es inferior a la actual. No se puede guardar");
+    }
+    else
+    {
+        //sendData(data);
+    }
+    //validateDate(data.date);
+
+    //sendData(data);
 
     /*const title = inputTaskTitle.value;
     const description = inputTaskTitle.value;

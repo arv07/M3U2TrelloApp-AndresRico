@@ -30,7 +30,7 @@ const cardItem = document.querySelector(".board-card-item");
   //droppable.on('droppable:dropped', () => console.log('droppable:dropped'));
   //droppable.on('droppable:returned', () => console.log('droppable:returned'));
   droppable.on('droppable:stop', () => changeColor());
-  droppable.on('droppable:dropped', () => console.log("Solado------------"));
+  //droppable.on('droppable:dropped', () => console.log("Solado------------"));
   droppable.on('drag:stopped', () => console.log("Stoppoed Event"));
   droppable.on('draggable:initialize', () => trigger());
   
@@ -39,8 +39,8 @@ const cardItem = document.querySelector(".board-card-item");
   
   const padre = droppable.getClassNameFor("source:placed");
 
-  console.log("Padre:");
-  console.log(padre);
+  //console.log("Padre:");
+  //console.log(padre);
 
 function trigger(){
     console.log("trigger ----------------");
@@ -55,10 +55,10 @@ function trigger(){
     const parent = cardItem.parentNode;
     //cardItem.classList.add("board-card-item__stripe--blue");
     const id = cardItem.getAttribute("idcard");
-    console.log(id);
+    /*console.log(id);
     console.log("Es hora de cambiar color");
     console.log(cardItem);
-    console.log(parent);
+    console.log(parent);*/
     //changeState();
   }
 
