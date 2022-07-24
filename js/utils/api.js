@@ -42,3 +42,19 @@ export async function listTask(){
     }
     
 }
+
+export async function modifyState(id){
+
+    try {
+
+        const result = await Api.put('/Tasks/'+id, {
+            State: "doing"
+        });
+
+        return result;
+        
+    } catch (error) {
+        return error
+    }
+    
+}

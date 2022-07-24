@@ -41,7 +41,13 @@
             <div class="board-card board__todo-card ">
                 <p class="board-card__title">TO DO</p>
                 <button id="add-task-btn" class="board-card__add-btn">+</button>
-                <div id="todo-container" class="board-card-container-tiem">
+
+                <div id="todo-container" class="board-card-container-tiem dropzone draggable-droppable--active">
+
+                    
+                    
+
+                   
                     
                 </div>
 
@@ -49,17 +55,24 @@
 
             </div>
 
-            <div class="board-card board__todo-card ">
+            <div class="board-card board__todo-card dropzone">
                 <p class="board-card__title">DOING</p>
-                
+                <div id="doing-container" class="board-card-container-tiem dropzone draggable-droppable--active">
+                    
+                   
 
-                
+                </div>
+
 
             </div>
 
-            <div class="board-card board__todo-card ">
+            <div class="board-card board__todo-card dropzone">
                 <p class="board-card__title">FINISHED</p>
-                
+                <div id="finished-container" class="board-card-container-tiem dropzone">
+                    
+                   
+
+                </div>
 
                 
 
@@ -70,7 +83,23 @@
     </div>
 
 </body>
+<!-- Entire bundle -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+<!-- legacy bundle for older browsers (IE11) -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.legacy.js"></script>
+<!-- Draggable only -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.js"></script>
+<!-- Sortable only -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
+<!-- Droppable only -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/droppable.js"></script>
+<!-- Swappable only -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/swappable.js"></script>
+<!-- Plugins only -->
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/plugins.js"></script>
+<script src="js/utils/hammer.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/model/addTask.js" type="module"></script>
 <script src="js/model/listTask.js" type="module"></script>
+<script src="js/model/changeState.js" type="module"></script>
 </html>
