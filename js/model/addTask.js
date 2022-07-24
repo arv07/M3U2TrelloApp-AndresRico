@@ -52,7 +52,7 @@ saveBtn.addEventListener('click', (event) => {
     }
     else
     {
-        //sendData(data);
+        sendData(data);
     }
     //validateDate(data.date);
 
