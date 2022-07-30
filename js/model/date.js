@@ -43,8 +43,6 @@ export default function countDown(date)
 }
 
 
-
-
 /*console.log(moment()._d.getYear());
 console.log(moment()._d.getMonth());
 console.log(moment()._d.getDate());*/

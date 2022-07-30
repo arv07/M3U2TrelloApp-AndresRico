@@ -95,6 +95,3 @@ const removeCards = () => {
     }
     
 }
-
-
-

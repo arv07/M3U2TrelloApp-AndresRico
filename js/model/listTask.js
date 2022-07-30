@@ -28,13 +28,13 @@ export const getData = async () => {
         if(d.State == "To do")
         {
             let newTaskHTML = `
-            <div class="board-card-item item" id="board-card-item" idcard="${d.id}">
+            <article class="board-card-item item" id="board-card-item" idcard="${d.id}">
                 <div class="board-card-item__stripe board-card-item__stripe--yellow"></div>
                 <p class="board-card__item-title board-card__item-title--f-medium">${d.Task_Title}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span>${d.Assigned_To}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span>${d.Delivery_Time}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2">Termina en ${countDown(d.Delivery_Time)}</p>
-            </div>
+            </article>
             `
             todoContainer.innerHTML += newTaskHTML;
         }
@@ -42,13 +42,13 @@ export const getData = async () => {
         else if(d.State == "doing")
         {
             let newTaskHTML = `
-            <div class="board-card-item item" id="board-card-item" idcard="${d.id}">
+            <article class="board-card-item item" id="board-card-item" idcard="${d.id}">
                 <div class="board-card-item__stripe board-card-item__stripe--blue"></div>
                 <p class="board-card__item-title board-card__item-title--f-medium">${d.Task_Title}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Responsable: </span>${d.Assigned_To}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2"><span style="font-weight: 400">Plazo: </span>${d.Delivery_Time}</p>
                 <p class="board-card__item-title board-card__item-title--f-medium-2">Termina en ${countDown(d.Delivery_Time)}</p>
-            </div>
+            </article>
             `
             doingContainer.innerHTML += newTaskHTML; 
         }
